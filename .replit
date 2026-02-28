@@ -1,0 +1,12 @@
+run = "npm install && node bot/index.js"
+entrypoint = "bot/index.js"
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+XDG_CONFIG_HOME = "/home/runner/.config"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
